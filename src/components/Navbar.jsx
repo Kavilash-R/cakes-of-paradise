@@ -10,7 +10,10 @@ const Navbar = () => {
   return (
     <div className="max-w-[1500px] h-16 mx-auto bg-gray-100 flex items-center">
       <div className="flex w-full ">
-        <Link className=" min-[300px]:text-lg sm:text-xl md:text-2xl lg:text-3xl ml-5 font-bold ">
+        <Link
+          to="/"
+          className=" min-[300px]:text-lg sm:text-xl md:text-2xl lg:text-3xl ml-5 font-bold "
+        >
           CAKES OF PARADISE
         </Link>
       </div>
@@ -31,19 +34,26 @@ const Navbar = () => {
             : "fixed left-[100%]"
         }
       >
-        <Link className="flex justify-center  font-bold py-5 text-2xl">
+        <Link to="/" className="flex justify-center  font-bold py-5 text-2xl">
           COP
         </Link>
         <ul className="p-4">
-          <li className="p-6 text-center cursor-pointer border-b border-black">
-            Cart
-          </li>
-          <li className="p-6 text-center cursor-pointer border-b  border-black">
-            Login
-          </li>
-          <li className="p-6 text-center cursor-pointer border-b  border-black">
-            About
-          </li>
+          <Link to="/cart">
+            <li className="p-6 text-center cursor-pointer border-b border-black">
+              Cart
+            </li>
+          </Link>
+          <Link to="/login">
+            <li className="p-6 text-center cursor-pointer border-b  border-black">
+              Login
+            </li>
+          </Link>
+          <Link to="/about">
+            <li className="p-6 text-center cursor-pointer border-b  border-black">
+              About
+            </li>
+          </Link>
+
           <li className="p-6 text-center cursor-pointer border-b  border-black">
             Contact
           </li>
