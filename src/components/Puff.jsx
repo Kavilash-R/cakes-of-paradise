@@ -1,7 +1,12 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 const Puff = () => {
-  return <div>Puff</div>;
+  return (
+    <>
+      <Navbar />
+      <div></div>
+    </>
+  );
 };
 
 export default Puff;

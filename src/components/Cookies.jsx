@@ -1,7 +1,12 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 const Cookies = () => {
-  return <div>Cookies</div>;
+  return (
+    <>
+      <Navbar />
+      <div></div>
+    </>
+  );
 };
 
 export default Cookies;
