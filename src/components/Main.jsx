@@ -11,7 +11,7 @@ const Main = () => {
             GREETINGS!!
           </h1>
           <br />
-          <p className="min-[0px]:text-2xl md:text-3xl lg:text-4xl">
+          <p className="min-[0px]:text-2xl md:text-3xl lg:text-4xl px-2">
             Welcome, where every bite is a taste of happiness!
           </p>
           <br /> <br />
@@ -24,8 +24,8 @@ const Main = () => {
         <div className="flex flex-wrap justify-center">
           <Link
             to="/cakes"
-            className="border rounded-3xl hover:border-gray-800  min-[0px]:h-40 min-[0px]:w-40 min-[0px]:m-3   min-[303px]:h-32 min-[303px]:w-32 min-[303px]:m-3  
-             min-[400px]:h-60 min-[400px]:w-60 min-[400px]:m-5   sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100"
+            className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
+             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100 min-[376px]:w-40 shadow-md"
           >
             <img
               src="./images/cakes-2.png"
@@ -37,60 +37,105 @@ const Main = () => {
               Crafted with love and passion!
             </h3>
             <br />
-            <p className=" border mt-2 border-gray-500 bg-white rounded-3xl flex items-center p-1 w-[50%] text-center">
-              &nbsp;&nbsp; Explore &nbsp; <FaArrowRightLong />
+            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+              &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>
 
           <Link
             to="/puff"
-            className="border rounded-3xl hover:border-gray-800  min-[0px]:h-40 min-[0px]:w-40 min-[0px]:m-3  
-             min-[303px]:h-32 min-[303px]:w-32 min-[303px]:m-3 min-[400px]:h-60 min-[400px]:w-60 min-[400px]:m-5 sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] bg-gray-100"
+            className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
+             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
           >
             <img
               src="./images/puffs-set.jpg"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  "
             ></img>
+            <br />
+            <h1 className="text-start font-bold ml-7 ">PUFFS</h1>
+            <h3 className="sm:block text-center min-[0px]:hidden">
+              Savor our delightful puffs
+            </h3>
+            <br />
+            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+              &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
+            </p>
           </Link>
           <Link
             to="/bread"
-            className="border rounded-3xl hover:border-gray-800  min-[0px]:h-40 min-[0px]:w-40 min-[0px]:m-3 
-              min-[303px]:h-32 min-[303px]:w-32 min-[303px]:m-3   min-[400px]:h-60 min-[400px]:w-60 min-[400px]:m-5   sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] bg-gray-100"
+            className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
+            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
           >
             <img
               src="./images/bread.png"
               className="h-[30%] w-[30%] border bg-white rounded-lg mr-[50%] mt-[8%]  "
             ></img>
+            <br />
+            <h1 className="text-start font-bold ml-7 ">BREAD</h1>
+            <h3 className="sm:block text-center min-[0px]:hidden">
+              Freshly baked bread, just for you!
+            </h3>
+            <br />
+            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+              &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
+            </p>
           </Link>
           <Link
             to="/chat"
-            className="border rounded-3xl hover:border-gray-800  min-[0px]:h-40 min-[0px]:w-40 min-[0px]:m-3 
-              min-[303px]:h-32 min-[303px]:w-32 min-[303px]:m-3   min-[400px]:h-60 min-[400px]:w-60 min-[400px]:m-5   sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] bg-gray-100"
+            className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
+             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
           >
             <img
               src="./images/chat-items.jpg"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  "
             ></img>
+            <br />
+            <h1 className="text-start font-bold ml-7 ">CHATS</h1>
+            <h3 className="sm:block text-center min-[0px]:hidden">
+              Crispy puris, perfect for snacking!
+            </h3>
+            <br />
+            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+              &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
+            </p>
           </Link>
           <Link
             to="/cookies"
-            className="border rounded-3xl hover:border-gray-800  min-[0px]:h-40 min-[0px]:w-40 min-[0px]:m-3 
-            min-[303px]:h-32 min-[303px]:w-32 min-[303px]:m-3   min-[400px]:h-60 min-[400px]:w-60 min-[400px]:m-5   sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] bg-gray-100"
+            className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
+            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
           >
             <img
               src="./images/cookies-set.png"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  bg-white "
             ></img>
+            <br />
+            <h1 className="text-start font-bold ml-7 ">COOKIES</h1>
+            <h3 className="sm:block text-center min-[0px]:hidden">
+              Yummy cookies,great for snacks!
+            </h3>
+            <br />
+            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+              &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
+            </p>
           </Link>
           <Link
             to="/others"
-            className="border rounded-3xl hover:border-gray-800  min-[0px]:h-40 min-[0px]:w-40 min-[0px]:m-3 
-              min-[303px]:h-32 min-[303px]:w-32 min-[303px]:m-3   min-[400px]:h-60 min-[400px]:w-60 min-[400px]:m-5   sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] bg-gray-100"
+            className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
+            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
           >
             <img
               src="./images/others.png"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%] bg-white "
             ></img>
+            <br />
+            <h1 className="text-start font-bold ml-7 ">OTHERS</h1>
+            <h3 className="sm:block text-center min-[0px]:hidden">
+              Tasty snacks, for any cravings!
+            </h3>
+            <br />
+            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+              &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
+            </p>
           </Link>
         </div>
       </center>
