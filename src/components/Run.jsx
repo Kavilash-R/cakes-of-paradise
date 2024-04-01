@@ -1,59 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+
 const Run = () => {
+  const data = [
+    {
+      img: "./images/brownie.jpg",
+    },
+    {
+      img: "./images/plainbun.jpg",
+    },
+    {
+      img: "./images/samosa-1.webp",
+    },
+    {
+      img: "./images/white-forest-cake.jpg",
+    },
+    {
+      img: "./images/bhelpuri.jpg",
+    },
+    {
+      img: "./images/chickenpuff1.jpg",
+    },
+    {
+      img: "./images/chocochipcookies.jpeg",
+    },
+    {
+      img: "./images/sandwichbread.jpg",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const prevSlide = () => {
+    const isFirst = currentIndex === 0;
+    const newIndex = isFirst ? data.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+  const nextSlide = () => {
+    const isLast = currentIndex === data.length - 1;
+    const newIndex = isLast ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
   return (
     <>
-      <div className="w-100% bg-gray-200 mt-20 ">
-        <div className="flex whitespace-nowrap overflow-x-auto mt-10">
-          <Link className="mx-5  mt-10">
-            <img
-              className="h-80 w-60 rounded-xl "
-              src="./images/brownie.jpg"
-              alt="brownie"
-            />
-          </Link>
-          <Link className="mx-5">
-            <img
-              className="h-80 w-60 rounded-xl "
-              src="./images/chicken puff 1.jpg"
-              alt="chicken puff"
-            />
-          </Link>
-          <Link className="mx-5">
-            <img
-              className="h-80 w-60 rounded-xl "
-              src="./images/plain bun.jpg"
-              alt="plain bun"
-            />
-          </Link>
-          <Link className="mx-5">
-            <img
-              className="h-80 w-60 rounded-xl "
-              src="./images/wheat bread.jpg"
-              alt="wheat bread"
-            />
-          </Link>
-          <Link className="mx-5">
-            <img
-              className="h-80 w-60 rounded-xl "
-              src="./images/white-forest-cake.jpg"
-              alt="white cake"
-            />
-          </Link>
-          <Link className="mx-5">
-            <img
-              className="h-80 w-60 rounded-xl"
-              src="./images/bhel puri.jpg"
-              alt="bhel puri"
-            />
-          </Link>
-          <Link className="mx-5">
-            <img
-              className="h-80 w-60 rounded-xl "
-              src="./images/chocochip cookies.jpeg"
-              alt="choco chip cookies"
-            />
-          </Link>
+      <div className="w-full bg-gray-100 sm:py-12 py-6 ">
+        <h1 className="min-[0px]:text-2xl md:text-3xl lg:text-5xl font-bold my-5 text-center px-4">
+          Some of our Popular Items!!
+        </h1>
+        <div className=" max-w-[1500px] h-[300px] md:h-[800px] md:w-[80%] w-[80%] m-auto py-10 px-4 relative group">
+          <div
+            style={{ backgroundImage: `url(${data[currentIndex].img})` }}
+            className="w-full h-full rounded-xl bg-center bg-cover duration-500 shadow-xl"
+          >
+            {}
+            <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+              <BsChevronCompactLeft onClick={prevSlide} size={30} />
+            </div>
+            {}
+            <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+              <BsChevronCompactRight onClick={nextSlide} size={30} />
+            </div>
+          </div>
         </div>
       </div>
     </>

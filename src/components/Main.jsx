@@ -17,7 +17,7 @@ const Main = () => {
           <br /> <br />
           <input
             type="text"
-            className="w-[40%] h-10 text-center border-2 border-gray-400 bg-gray-100 rounded-xl"
+            className="w-[40%] h-10 pl-4 border-2 border-gray-400 bg-gray-100 rounded-xl"
             placeholder="Search"
           />
         </div>

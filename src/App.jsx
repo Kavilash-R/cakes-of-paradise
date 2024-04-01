@@ -6,6 +6,9 @@ function App() {
     <>
       <Navbar />
       <Main />
+      <br />
+      <br />
+      <br />
       <Run />
     </>
   );

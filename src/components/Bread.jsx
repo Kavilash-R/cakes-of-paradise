@@ -69,7 +69,7 @@ const Bread = () => {
           <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
-              src="./images/sandwich bread.jpg"
+              src="./images/sandwichbread.jpg"
               alt="cakes"
             />
             <p className="w-100% text-center my-2 font-medium hover:underline">
@@ -127,7 +127,7 @@ const Bread = () => {
           <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
-              src="./images/plain bun.jpg"
+              src="./images/plainbun.jpg"
               alt="cakes"
             />
             <p className="w-100% text-center my-2 font-medium hover:underline">
