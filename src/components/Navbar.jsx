@@ -42,7 +42,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className="min-[300px]:px-1 sm:px-2 md:px-6  hidden md:flex">
-        <Link to="/login" className="px-3">
+        <Link to="/profile" className="px-3">
           <IoMdContact size={23} />
         </Link>
       </div>
