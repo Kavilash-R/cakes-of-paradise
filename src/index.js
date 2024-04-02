@@ -12,8 +12,10 @@ import Bread from "./components/Bread";
 import Chat from "./components/Chat";
 import Cookies from "./components/Cookies";
 import Others from "./components/Others";
-
+import Contact from "./components/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AuthContextProvider } from "./context/AuthContext";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
   {
     path: "/cakes",
@@ -63,6 +69,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthContextProvider>
+      <RouterProvider router={router} />
+    </AuthContextProvider>
   </React.StrictMode>
 );

@@ -4,7 +4,7 @@ const Others = () => {
   return (
     <>
       <Navbar />
-      <div></div>
+      <div className="dark:bg-[#131313]"></div>
     </>
   );
 };
