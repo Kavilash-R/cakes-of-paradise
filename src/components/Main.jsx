@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Main = () => {
   return (
     <>
-      <center className="w-full">
+      <center className="w-full dark:bg-[#131313] dark:text-white">
         <div className="py-8 ">
           <h1 className="min-[0px]:text-2xl md:text-3xl lg:text-5xl ">
             GREETINGS!!
@@ -17,15 +17,16 @@ const Main = () => {
           <br /> <br />
           <input
             type="text"
-            className="w-[40%] h-10 pl-4 border-2 border-gray-400 bg-gray-100 rounded-xl"
+            className="w-[40%] h-10 pl-4 border-2 border-gray-400 bg-gray-100 rounded-xl dark:bg-gray-800 dark:border-white"
             placeholder="Search"
           />
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center ">
           <Link
             to="/cakes"
             className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
-             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100 min-[376px]:w-40 shadow-md"
+             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10  bg-gray-100 min-[376px]:w-40 shadow-md
+             dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b]"
           >
             <img
               src="./images/cakes-2.png"
@@ -37,7 +38,7 @@ const Main = () => {
               Crafted with love and passion!
             </h3>
             <br />
-            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+            <p className="dark:text-black border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
               &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>
@@ -45,7 +46,8 @@ const Main = () => {
           <Link
             to="/puff"
             className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
-             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
+             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md
+             dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b]"
           >
             <img
               src="./images/puffs-set.jpg"
@@ -57,14 +59,15 @@ const Main = () => {
               Savor our delightful puffs
             </h3>
             <br />
-            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+            <p className="dark:text-black border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
               &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>
           <Link
             to="/bread"
             className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
-            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
+            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md
+            dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b]"
           >
             <img
               src="./images/bread.png"
@@ -76,14 +79,15 @@ const Main = () => {
               Freshly baked bread, just for you!
             </h3>
             <br />
-            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+            <p className="dark:text-black border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
               &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>
           <Link
             to="/chat"
             className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
-             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
+             sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md
+             dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b]"
           >
             <img
               src="./images/chat-items.jpg"
@@ -95,14 +99,15 @@ const Main = () => {
               Crispy puris, perfect for snacking!
             </h3>
             <br />
-            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+            <p className="dark:text-black border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
               &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>
           <Link
             to="/cookies"
             className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
-            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
+            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md
+            dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b]"
           >
             <img
               src="./images/cookies-set.png"
@@ -114,14 +119,15 @@ const Main = () => {
               Yummy cookies,great for snacks!
             </h3>
             <br />
-            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+            <p className="dark:text-black border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
               &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>
           <Link
             to="/others"
             className="border rounded-3xl hover:border-gray-800   min-[0px]:h-48 min-[0px]:w-36 min-[0px]:my-5 min-[0px]:mx-2  
-            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md"
+            sm:h-60 sm:w-60 sm:m-10  lg:h-[300px] lg:w-[300px] lg:m-10 bg-gray-100  min-[376px]:w-40 shadow-md
+            dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b]"
           >
             <img
               src="./images/others.png"
@@ -133,7 +139,7 @@ const Main = () => {
               Tasty snacks, for any cravings!
             </h3>
             <br />
-            <p className=" border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
+            <p className="dark:text-black border sm:mt-2 border-gray-500 bg-white rounded-3xl flex items-center sm:p-1 min-[0px]:w-[70%] sm:w-[50%] text-center">
               &nbsp; &nbsp; Explore &nbsp; <FaArrowRightLong />
             </p>
           </Link>

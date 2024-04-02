@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
@@ -17,8 +17,12 @@ const Navbar = () => {
     setdark(!dark);
   };
 
+  function toggleTheme() {
+    document.documentElement.classList.toggle("dark");
+  }
+
   return (
-    <div className="max-w-[1500px] h-16 mx-auto bg-gray-100 flex items-center">
+    <div className="max-w-[1500px] h-16 mx-auto dark:bg-[#080707e4] dark:text-white bg-gray-100 flex items-center">
       <div className="flex w-full ">
         <Link
           to="/"
@@ -32,9 +36,11 @@ const Navbar = () => {
           <FaShoppingCart size={20} />
         </Link>
       </div>
-      <button onClick={handleDark} className="px-3">
-        {!dark ? <CiLight size={20} /> : <MdDarkMode size={20} />}
-      </button>
+      <div onClick={toggleTheme} className="pt-2">
+        <button onClick={handleDark} className="px-3">
+          {!dark ? <CiLight size={20} /> : <MdDarkMode size={20} />}
+        </button>
+      </div>
       <div className="min-[300px]:px-1 sm:px-2 md:px-6  hidden md:flex">
         <Link to="/login" className="px-3">
           <IoMdContact size={23} />
@@ -46,7 +52,7 @@ const Navbar = () => {
       <div
         className={
           !nav
-            ? "w-[35%] lg:w-[25%] h-full fixed left-0 top-0 bg-gray-200 ease-in-out duration-500"
+            ? "w-[35%] lg:w-[25%] h-full fixed left-0 top-0 dark:bg-black bg-gray-200 ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
       >
@@ -55,22 +61,22 @@ const Navbar = () => {
         </Link>
         <ul className="p-4">
           <Link to="/cart">
-            <li className="p-6 text-center cursor-pointer border-b border-black">
+            <li className="p-6 text-center cursor-pointer dark:border-b-white border-b border-black">
               Cart
             </li>
           </Link>
           <Link to="/login">
-            <li className="p-6 text-center cursor-pointer border-b  border-black">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
               Login
             </li>
           </Link>
           <Link to="/about">
-            <li className="p-6 text-center cursor-pointer border-b  border-black">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
               About
             </li>
           </Link>
 
-          <li className="p-6 text-center cursor-pointer border-b  border-black">
+          <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
             Contact
           </li>
         </ul>

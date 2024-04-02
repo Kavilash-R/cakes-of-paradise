@@ -4,9 +4,12 @@ const Puff = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center dark:bg-[#131313]">
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+             dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/veg puff1.jpg"
@@ -35,7 +38,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/panner puff1.jpg"
@@ -64,7 +70,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/egg puff 1.jpg"
@@ -93,7 +102,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/chickenpuff1.jpg"
@@ -122,7 +134,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/samosa-1.webp"
@@ -151,7 +166,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/chicken roll.jpeg"
@@ -180,7 +198,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/panner roll.jpeg"
@@ -209,7 +230,10 @@ const Puff = () => {
         </div>
 
         <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
-          <div className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100">
+          <div
+            className="border rounded-xl border-gray-300 bg-gray-200 hover:border-gray-700 hover:bg-gray-100
+          dark:bg-[#2c2b2b] dark:hover:border-white dark:border-[#2c2b2b] dark:text-white"
+          >
             <img
               className="w-48 ml-6 h-48 mt-3 rounded-xl xl:ml-12"
               src="./images/chicken roll.jpeg"
