@@ -16,6 +16,7 @@ import Contact from "./components/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext";
 import Profile from "./components/Profile";
+import Protected from "./components/Protected";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <Profile />,
+    element: (
+      <Protected>
+        <Profile />
+      </Protected>
+    ),
   },
   {
     path: "/cart",

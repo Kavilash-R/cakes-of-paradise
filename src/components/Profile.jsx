@@ -1,28 +1,31 @@
 import React from "react";
 import { UserAuth } from "../context/AuthContext";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+
+import Navba1 from "./Navba1";
 const Profile = () => {
-  const { user, logout } = UserAuth();
+  const { user, logOut } = UserAuth();
 
   const handleSignOut = async () => {
     try {
-      await logout();
+      await logOut();
     } catch (error) {
       console.log(error);
     }
   };
   return (
     <>
-      <Navbar />
-      <div className="text-center pt-20">profile</div>
-      <div className="text-center pt-20">
-        {" "}
-        {user?.displayName ? (
-          <button onClick={handleSignOut}>logout</button>
-        ) : (
-          <Link to="/login">sign in</Link>
-        )}
+      <Navba1 />
+      <div className="text-center text-3xl pt-5">profile</div>
+      <div className="text-center text-2xl pt-20 font-semibold">
+        Welcome,{user?.displayName}
+      </div>
+      <div className="text-center pt-10">
+        <button
+          className="bg-gray-200 px-2 py-1 rounded-md"
+          onClick={handleSignOut}
+        >
+          Logout
+        </button>
       </div>
     </>
   );

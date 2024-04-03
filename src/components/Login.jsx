@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import GoogleButton from "react-google-button";
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import Navba1 from "./Navba1";
 const Login = () => {
   const { googleSignIn, user, logOut } = UserAuth();
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ const Login = () => {
 
   return (
     <>
+      <Navba1 />
       <div className="h-full w-full">
         <div className="text-5xl font-semibold text-center mt-20">Sign In</div>
 
