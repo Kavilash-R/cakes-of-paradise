@@ -25,7 +25,7 @@ const Contact = () => {
           <div className="text-center text-xl md:text-3xl">
             {" "}
             <br />
-            <p className="myp2">To Contact us Call : +91 8610075003</p>
+            <p className="myp2">To Contact us Call : +91 861007****</p>
           </div>
         </div>
       </div>

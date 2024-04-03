@@ -14,7 +14,7 @@ const Navba1 = () => {
   };
   return (
     <>
-      <div className="max-w-[1500px] h-16 mx-auto dark:bg-[#080707e4] dark:text-white bg-gray-100 flex items-center">
+      <div className="max-w-[1500px] h-16 mx-auto bg-gray-100 flex items-center">
         <div className="flex w-full ">
           <Link
             to="/"
@@ -23,11 +23,13 @@ const Navba1 = () => {
             CAKES OF PARADISE
           </Link>
         </div>
-        {user?.displayName ? (
-          <button onClick={handleSignOut}>logout</button>
-        ) : (
-          <Link to="/login">sign in</Link>
-        )}
+        <div className="mr-5 font-semibold text-lg md:text-xl">
+          {user?.displayName ? (
+            <button onClick={handleSignOut}>Logout</button>
+          ) : (
+            <Link to="/login">sign in</Link>
+          )}
+        </div>
       </div>
     </>
   );

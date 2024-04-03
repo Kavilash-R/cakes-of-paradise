@@ -15,17 +15,22 @@ const Profile = () => {
   return (
     <>
       <Navba1 />
-      <div className="text-center text-3xl pt-5">profile</div>
-      <div className="text-center text-2xl pt-20 font-semibold">
-        Welcome,{user?.displayName}
-      </div>
-      <div className="text-center pt-10">
-        <button
-          className="bg-gray-200 px-2 py-1 rounded-md"
-          onClick={handleSignOut}
-        >
-          Logout
-        </button>
+      <div className="">
+        <div className="text-center font-bold text-3xl md:text-5xl pt-5 ">
+          Account
+        </div>
+        <div className="text-center text-2xl md:text-3xl pt-16 font-semibold flex items-center justify-center">
+          <div>Welcome,</div>
+          <div className="font-bold">{user?.displayName}</div>
+        </div>
+        <div className="text-center  pt-10">
+          <button
+            className="bg-gray-200 px-2 md:px-4 md:py-2 py-1 rounded-md md:text-xl"
+            onClick={handleSignOut}
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </>
   );

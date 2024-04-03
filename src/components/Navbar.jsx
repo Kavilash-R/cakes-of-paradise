@@ -70,6 +70,11 @@ const Navbar = () => {
               Login
             </li>
           </Link>
+          <Link to="/profile">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
+              Account
+            </li>
+          </Link>
           <Link to="/about">
             <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
               About
