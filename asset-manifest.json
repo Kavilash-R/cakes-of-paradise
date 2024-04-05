@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cakes-of-paradise/static/css/main.a9f23331.css",
+    "main.js": "/cakes-of-paradise/static/js/main.1d9d907a.js",
+    "index.html": "/cakes-of-paradise/index.html",
+    "main.a9f23331.css.map": "/cakes-of-paradise/static/css/main.a9f23331.css.map",
+    "main.1d9d907a.js.map": "/cakes-of-paradise/static/js/main.1d9d907a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9f23331.css",
+    "static/js/main.1d9d907a.js"
+  ]
+}
