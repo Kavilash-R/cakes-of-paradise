@@ -27,6 +27,11 @@ const Contact = () => {
             <br />
             <p className="myp2">To Contact us Call : +91 861007****</p>
           </div>
+          <br />
+          <p className="min-[0px]:text-2xl md:text-3xl lg:text-4xl px-2 text-center">
+            This Website is still in developing process it takes some time to
+            complete
+          </p>
         </div>
       </div>
     </>

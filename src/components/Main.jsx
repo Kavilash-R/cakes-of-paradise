@@ -15,15 +15,19 @@ const Main = () => {
             GREETINGS!!
           </h1>
           <br />
+          <br />
           <p className="min-[0px]:text-2xl md:text-3xl lg:text-4xl px-2">
             Welcome, where every bite is a taste of happiness!
           </p>
+          <br />
           <br /> <br />
+          {/*
           <input
             type="text"
             className="w-[40%] h-10 pl-4 border-2 border-gray-400 bg-gray-100 rounded-xl dark:bg-gray-800 dark:border-white"
             placeholder="Search"
           />
+        */}
         </div>
         <div className="flex flex-wrap justify-center ">
           <Link
