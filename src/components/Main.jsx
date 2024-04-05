@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Run from "./Run";
+import Contact from "./Contact";
+import Navbar from "./Navbar";
 
 const Main = () => {
   return (
     <>
+      <Navbar />
       <center className="w-full dark:bg-[#131313] dark:text-white">
         <div className="py-8 ">
           <h1 className="min-[0px]:text-2xl md:text-3xl lg:text-5xl ">
@@ -145,6 +149,8 @@ const Main = () => {
           </Link>
         </div>
       </center>
+      <Run />
+      <Contact />
     </>
   );
 };

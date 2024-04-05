@@ -52,36 +52,39 @@ const Navbar = () => {
       <div
         className={
           !nav
-            ? "w-[35%] lg:w-[25%] h-full fixed left-0 top-0 dark:bg-black bg-gray-200 ease-in-out duration-500"
+            ? "w-[35%] lg:w-[25%] h-full fixed left-0 top-0 dark:bg-black bg-gray-200 ease-in-out duration-500 z-10"
             : "fixed left-[-100%]"
         }
       >
-        <Link to="/" className="flex justify-center  font-bold py-5 text-2xl">
+        <Link
+          to="/"
+          className="flex justify-center  font-bold py-5 text-2xl hover:underline"
+        >
           COP
         </Link>
         <ul className="p-4">
           <Link to="/cart">
-            <li className="p-6 text-center cursor-pointer dark:border-b-white border-b border-black">
+            <li className="p-6 text-center cursor-pointer dark:border-b-white border-b border-black hover:underline">
               Cart
             </li>
           </Link>
           <Link to="/login">
-            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black hover:underline">
               Login
             </li>
           </Link>
           <Link to="/profile">
-            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black hover:underline">
               Account
             </li>
           </Link>
           <Link to="/about">
-            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black hover:underline">
               About
             </li>
           </Link>
           <Link to="/contact">
-            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black">
+            <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black hover:underline">
               Contact
             </li>
           </Link>
