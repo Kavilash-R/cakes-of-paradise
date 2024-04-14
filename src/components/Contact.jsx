@@ -29,7 +29,7 @@ const Contact = () => {
           </div>
           <br />
           <p className="min-[0px]:text-2xl md:text-3xl lg:text-4xl px-2 text-center">
-            This Website is still in developing process it takes some time to
+            This Website is still in development process it takes some time to
             complete
           </p>
         </div>
