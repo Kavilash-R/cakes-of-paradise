@@ -15,7 +15,7 @@ const Profile = () => {
   return (
     <>
       <Navba1 />
-      <div className="">
+      <div className="dark:bg-[#131313] dark:text-white ">
         <div className="text-center font-bold text-3xl md:text-5xl pt-5 ">
           Account
         </div>
@@ -23,9 +23,9 @@ const Profile = () => {
           <div>Welcome,</div>
           <div className="font-bold">{user?.displayName}</div>
         </div>
-        <div className="text-center  pt-10">
+        <div className="text-center  pt-10 pb-96">
           <button
-            className="bg-gray-200 px-2 md:px-4 md:py-2 py-1 rounded-md md:text-xl"
+            className="bg-gray-200 px-2 md:px-4 md:py-2 py-1 rounded-md md:text-xl dark:text-black "
             onClick={handleSignOut}
           >
             Logout

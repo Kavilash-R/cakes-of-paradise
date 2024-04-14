@@ -24,11 +24,15 @@ const Login = () => {
   return (
     <>
       <Navba1 />
-      <div className="h-full w-full">
-        <div className="text-5xl font-semibold text-center mt-20">Sign In</div>
+      <div className="dark:bg-[#131313] dark:text-white pb-96">
+        <div className="h-full w-full ">
+          <div className="text-5xl font-semibold text-center pt-20">
+            Sign In
+          </div>
 
-        <div className=" grid grid-cols-1 gap-4 place-items-center h-80">
-          <GoogleButton onClick={handleGoogleSignIn} />
+          <div className=" grid grid-cols-1 gap-4 place-items-center pt-10  h-80">
+            <GoogleButton onClick={handleGoogleSignIn} />
+          </div>
         </div>
       </div>
     </>

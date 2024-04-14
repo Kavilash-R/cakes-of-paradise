@@ -14,7 +14,7 @@ const Navba1 = () => {
   };
   return (
     <>
-      <div className="max-w-[1500px] h-16 mx-auto bg-gray-100 flex items-center">
+      <div className="max-w-[1500px] h-16 mx-auto bg-gray-100 flex items-center  dark:bg-[#080707e4] dark:text-white">
         <div className="flex w-full ">
           <Link
             to="/"
