@@ -73,14 +73,15 @@ const Cart = ({
             </div>
           </div>
         </div>
-
-        <div className=" flex justify-center my-8 md:my-16 md:text-2xl   ">
-          <Link to="/purchase">
-            <button className=" rounded-lg bg-red-600 px-5 py-1 hover:bg-orange-500 border hover:border-black">
-              Purchase
-            </button>
-          </Link>
-        </div>
+        {cartItems.length >= 1 && (
+          <div className=" flex justify-center my-8 md:my-16 md:text-2xl   ">
+            <Link to="/purchase">
+              <button className=" rounded-lg bg-red-600 px-5 py-1 hover:bg-orange-500 border hover:border-black">
+                Purchase
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </>
   );
