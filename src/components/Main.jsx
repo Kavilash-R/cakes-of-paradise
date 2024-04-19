@@ -38,6 +38,7 @@ const Main = () => {
           >
             <img
               src="./images/cakes-2.png"
+              alt="cakes"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  "
             ></img>
             <br />
@@ -59,6 +60,7 @@ const Main = () => {
           >
             <img
               src="./images/puffs-set.jpg"
+              alt="puffs"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  "
             ></img>
             <br />
@@ -79,6 +81,7 @@ const Main = () => {
           >
             <img
               src="./images/bread.png"
+              alt="bread"
               className="h-[30%] w-[30%] border bg-white rounded-lg mr-[50%] mt-[8%]  "
             ></img>
             <br />
@@ -99,6 +102,7 @@ const Main = () => {
           >
             <img
               src="./images/chat-items.jpg"
+              alt="chats"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  "
             ></img>
             <br />
@@ -119,6 +123,7 @@ const Main = () => {
           >
             <img
               src="./images/cookies-set.png"
+              alt="cookies"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%]  bg-white "
             ></img>
             <br />
@@ -139,6 +144,7 @@ const Main = () => {
           >
             <img
               src="./images/others.png"
+              alt="others"
               className="h-[30%] w-[30%] rounded-lg mr-[50%] mt-[8%] bg-white "
             ></img>
             <br />

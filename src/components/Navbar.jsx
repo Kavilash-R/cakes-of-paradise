@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { MdDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 
 import { IoMdContact } from "react-icons/io";
-const Navbar = () => {
+const Navbar = ({ cartItems }) => {
   const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
@@ -31,7 +31,7 @@ const Navbar = () => {
           CAKES OF PARADISE
         </Link>
       </div>
-      <div className="min-[300px]:px-1 sm:px-2 md:px-6  hidden md:flex">
+      <div className="min-[300px]:px-1 sm:px-2 md:px-6  md:flex">
         <Link to="/cart" className="px-3">
           <FaShoppingCart size={20} />
         </Link>

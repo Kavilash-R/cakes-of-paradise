@@ -14,7 +14,7 @@ const Run = () => {
       img: "./images/samosa-1.webp",
     },
     {
-      img: "./images/white-forest-cake.jpg",
+      img: "./images/veg pizza.jpg",
     },
     {
       img: "./images/bhelpuri.jpg",
@@ -27,6 +27,9 @@ const Run = () => {
     },
     {
       img: "./images/sandwichbread.jpg",
+    },
+    {
+      img: "./images/coffee.jpg",
     },
   ];
 
