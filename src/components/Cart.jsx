@@ -19,7 +19,7 @@ const Cart = ({
         <div className="  dark:text-white  text-2xl font-bold md:text-3xl flex justify-center py-7 md:py-7">
           Cart Items
         </div>
-        <div className=" border border-black  bg-yellow-300 my-20 mx-20 lg:mr-40 ">
+        <div className=" border border-black  bg-yellow-300 my-20 mx-5 md:mx-20 lg:mr-40  ">
           <div className=" py-5">
             {cartItems.length === 0 && (
               <div className=" mx-5 grid place-content-center md:text-xl">
@@ -32,42 +32,52 @@ const Cart = ({
                 <div key={item.id} className="flex  items-center ">
                   <div className=" items-start">
                     <img
-                      className=" h-16 w-16 p-2 mr-5 md:pr-24  md:h-20 md:w-24 "
+                      className=" h-16 w-16 p-2 mr-3 md:pr-24 font-semibold text-sm md:text-xl md:h-20 md:w-24 "
                       src={item.image}
                       alt={item.name}
                     />
                   </div>
-                  <div className="md:text-xl">{item.name}</div>
-                  <div className="">
-                    <button
-                      className=" border border-black bg-red-500 px-1 my-0 mx-2  md:text-xl"
-                      onClick={() => handleRemoveProduct(item)}
-                    >
-                      -
-                    </button>
-                    <button
-                      className="border border-black bg-green-500 px-1 my-0 mx-2 md:text-xl"
-                      onClick={() => handleAddProduct(item)}
-                    >
-                      +
-                    </button>
+
+                  <div className=" text-sm md:text-xl font-semibold lg:px-3">
+                    {item.name}
                   </div>
-                  <div className=" flex justify-end md:text-xl ">
+
+                  <button
+                    className=" border border-black bg-red-500 px-1 mx-1  md:text-xl "
+                    onClick={() => handleRemoveProduct(item)}
+                  >
+                    -
+                  </button>
+
+                  <div className=" flex justify-end font-semibold lg:px-3 text-sm md:text-xl">
                     {item.quantity} * {item.price} INR
                   </div>
+                  <button
+                    className="border border-black bg-green-500 px-1  my-0 mx-2 md:text-xl"
+                    onClick={() => handleAddProduct(item)}
+                  >
+                    +
+                  </button>
                 </div>
               ))}
             </div>
+            <br />
             <div className="md:text-xl">
               <div className=" pr-3 ">
                 <div className="flex justify-end">
-                  <div className="mx-10 bg-gray-800 rounded-lg text-white mx- py-1">
+                  <div className=" bg-gray-800 rounded-lg text-white  mr-3 ">
                     {cartItems.length >= 1 && (
-                      <button onClick={handleCartClearance}>clear cart</button>
+                      <button className="px-3" onClick={handleCartClearance}>
+                        clear
+                      </button>
                     )}
                   </div>
-                  <div className=" flex justify-end">Total Price</div>
-                  <div className=" mx-4 md:pr-6">{totalPrice} INR </div>
+                  <div className=" font-semibold text-sm md:text-xl flex justify-end">
+                    Total Price :
+                  </div>
+                  <div className="font-semibold text-sm md:text-xl mx-4 md:pr-6">
+                    {totalPrice} INR{" "}
+                  </div>
                 </div>
               </div>
             </div>
