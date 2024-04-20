@@ -32,7 +32,7 @@ const Cart = ({
                 <div key={item.id} className="flex  items-center ">
                   <div className=" items-start">
                     <img
-                      className=" h-16 w-16 p-2 mr-3 md:pr-10 font-semibold text-sm md:text-xl md:h-20 md:w-24 "
+                      className=" h-16 w-16 p-2 mr-3 md:pr-5 font-semibold text-sm md:text-xl md:h-20 md:w-24 "
                       src={item.image}
                       alt={item.name}
                     />
