@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cakes-of-paradise/static/css/main.f4fc710c.css",
-    "main.js": "/cakes-of-paradise/static/js/main.401f1301.js",
+    "main.css": "/cakes-of-paradise/static/css/main.ea0986fe.css",
+    "main.js": "/cakes-of-paradise/static/js/main.a801951b.js",
     "index.html": "/cakes-of-paradise/index.html",
-    "main.f4fc710c.css.map": "/cakes-of-paradise/static/css/main.f4fc710c.css.map",
-    "main.401f1301.js.map": "/cakes-of-paradise/static/js/main.401f1301.js.map"
+    "main.ea0986fe.css.map": "/cakes-of-paradise/static/css/main.ea0986fe.css.map",
+    "main.a801951b.js.map": "/cakes-of-paradise/static/js/main.a801951b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4fc710c.css",
-    "static/js/main.401f1301.js"
+    "static/css/main.ea0986fe.css",
+    "static/js/main.a801951b.js"
   ]
 }
