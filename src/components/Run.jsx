@@ -1,35 +1,54 @@
 import React, { useState } from "react";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Run = () => {
   const data = [
     {
       img: "./images/brownie.jpg",
+      des: "/cakes",
+      id: "#cakes",
     },
     {
       img: "./images/plainbun.jpg",
+      des: "/bread",
+      id: "#bread",
     },
     {
       img: "./images/samosa-1.webp",
+      des: "/puff",
+      id: "#puff",
     },
     {
       img: "./images/veg pizza.jpg",
+      des: "/others",
+      id: "#others",
     },
     {
       img: "./images/bhelpuri.jpg",
+      des: "/chat",
+      id: "#chat",
     },
     {
       img: "./images/chickenpuff1.jpg",
+      des: "/puff",
+      id: "#puff",
     },
     {
       img: "./images/chocochipcookies.jpeg",
+      des: "/cookies",
+      id: "#cookies",
     },
     {
       img: "./images/sandwichbread.jpg",
+      des: "/bread",
+      id: "#bread",
     },
     {
       img: "./images/coffee.jpg",
+      des: "/others",
+      id: "#others",
     },
   ];
 
@@ -52,19 +71,23 @@ const Run = () => {
             Some of our Popular Items!!
           </h1>
           <div className=" max-w-[1500px] h-[300px] md:h-[700px] md:w-[80%] w-[80%] m-auto py-10 md:px-4 px-2 relative group">
-            <div
-              style={{ backgroundImage: `url(${data[currentIndex].img})` }}
-              className="w-full h-full rounded-xl bg-center bg-cover duration-500 shadow-xl"
-            >
-              {}
-              <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
-                <BsChevronCompactLeft onClick={prevSlide} size={30} />
-              </div>
-              {}
-              <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
-                <BsChevronCompactRight onClick={nextSlide} size={30} />
-              </div>
-            </div>
+            <a href={data.id}>
+              <Link to={data.des}>
+                <div
+                  style={{ backgroundImage: `url(${data[currentIndex].img})` }}
+                  className="w-full h-full rounded-xl bg-center bg-cover duration-500 shadow-xl"
+                >
+                  {}
+                  <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+                    <BsChevronCompactLeft onClick={prevSlide} size={30} />
+                  </div>
+                  {}
+                  <div className="  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+                    <BsChevronCompactRight onClick={nextSlide} size={30} />
+                  </div>
+                </div>
+              </Link>
+            </a>
           </div>
         </div>
       </div>

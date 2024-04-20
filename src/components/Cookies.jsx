@@ -5,7 +5,10 @@ const Cookies = ({ productItems5, handleAddProduct }) => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-wrap justify-center dark:bg-[#131313]">
+      <div
+        id="cookies"
+        className="flex flex-wrap justify-center dark:bg-[#131313]"
+      >
         {productItems5.map((productItem) => (
           <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
             <div

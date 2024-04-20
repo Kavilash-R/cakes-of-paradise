@@ -6,7 +6,10 @@ const Others = ({ productItems, handleAddProduct }) => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-wrap justify-center dark:bg-[#131313]">
+      <div
+        id="others"
+        className="flex flex-wrap justify-center dark:bg-[#131313]"
+      >
         {productItems.map((productItem) => (
           <div className="w-60 h-[360px]  m-10 mr-6 xl:h-[420px] xl:w-[300px] ">
             <div

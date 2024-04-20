@@ -83,11 +83,11 @@ const Navbar = ({ cartItems }) => {
               About
             </li>
           </Link>
-          <Link to="/contact">
+          <a href="#contact">
             <li className="p-6 text-center cursor-pointer  dark:border-b-white  border-b  border-black hover:underline">
               Contact
             </li>
-          </Link>
+          </a>
         </ul>
       </div>
     </div>

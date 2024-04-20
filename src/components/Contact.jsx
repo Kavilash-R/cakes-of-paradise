@@ -3,7 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="py-10 pb-28 md:pb-80 dark:bg-[#131313] dark:text-white">
+      <div
+        id="contact"
+        className="py-10 pb-28 md:pb-80 dark:bg-[#131313] dark:text-white"
+      >
         <h2 className="text-3xl md:text-5xl font-bold text-center ">CONTACT</h2>
         <br />
         <hr />
