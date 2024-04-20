@@ -19,7 +19,7 @@ const Cart = ({
         <div className="  dark:text-white  text-2xl font-bold md:text-3xl flex justify-center py-7 md:py-7">
           Cart Items
         </div>
-        <div className=" border border-black  bg-yellow-300 my-20 mx-5 md:mx-20 lg:mr-40  ">
+        <div className=" border border-black  bg-yellow-300 my-20 mx-5 md:mx-20 lg:mr-40 md:mr-10  ">
           <div className=" py-5">
             {cartItems.length === 0 && (
               <div className=" mx-5 grid place-content-center md:text-xl">
@@ -32,7 +32,7 @@ const Cart = ({
                 <div key={item.id} className="flex  items-center ">
                   <div className=" items-start">
                     <img
-                      className=" h-16 w-16 p-2 mr-3 md:pr-24 font-semibold text-sm md:text-xl md:h-20 md:w-24 "
+                      className=" h-16 w-16 p-2 mr-3 md:pr-10 font-semibold text-sm md:text-xl md:h-20 md:w-24 "
                       src={item.image}
                       alt={item.name}
                     />
