@@ -144,14 +144,7 @@ function App() {
           }
         ></Route>
 
-        <Route
-          path="/profile"
-          element={
-            <Protected>
-              <Profile />
-            </Protected>
-          }
-        ></Route>
+        <Route path="/profile" element={<Profile />}></Route>
       </Routes>
     </>
   );
