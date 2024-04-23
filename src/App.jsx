@@ -13,7 +13,6 @@ import Others from "./components/Others";
 import Profile from "./components/Profile";
 import Protected from "./components/Protected";
 import { Route, Routes } from "react-router-dom";
-
 import data from "./back/data/Data";
 import { useState } from "react";
 import dataPuff from "./back/data/DataPuff";
